@@ -51,6 +51,8 @@ export default function SiteNav() {
 
   const seriesProducts = products.filter((p) => p.seriesId === activeSeries);
 
+  const [, navigate] = useLocation();
+
   return (
     <>
       <header
@@ -166,7 +168,7 @@ export default function SiteNav() {
                   setActiveSeries(productSeries[0].id);
                 }}
                 onMouseLeave={scheduleClose}
-                onClick={() => { window.location.href = '/products'; }}
+                onClick={() => { navigate('/products'); }}
                 style={{
                   fontFamily: "'DM Mono', monospace",
                   fontSize: 16,
@@ -265,7 +267,7 @@ export default function SiteNav() {
                           onMouseEnter={() => setActiveSeries(series.id)}
                           onClick={() => {
                             setDropdownOpen(false);
-                            window.location.href = `/products#${series.id}`;
+                            navigate(`/products#${series.id}`);
                           }}
                           style={{
                             display: "block",
