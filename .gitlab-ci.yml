@@ -10,6 +10,8 @@ build-image:
   script:
     - chmod +x ./scripts/build.sh
     - ./scripts/build.sh
+    - chmod +x ./scripts/build-image.sh
+    - ./scripts/build-image.sh
   only:
     - master
 
