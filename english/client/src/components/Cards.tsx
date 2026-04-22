@@ -20,7 +20,6 @@ interface CardData {
   label: string;
   date: string;
   image: string;
-  readTime?: string;
   type: "product" | "research";
 }
 
@@ -101,18 +100,6 @@ export function SmallCard({ item, delay = 0 }: { item: CardData; delay?: number 
       <div className="small-card-content">
         <div style={{ marginBottom: "0.4rem" }}>
           <span className="tag">{item.label}</span>
-          {item.readTime && (
-            <span
-              style={{
-                marginLeft: "0.5rem",
-                fontSize: "12px",
-                fontFamily: "'DM Mono', monospace",
-                color: "rgba(138, 180, 248, 0.55)",
-              }}
-            >
-              {item.readTime}
-            </span>
-          )}
         </div>
         <h3
           style={{

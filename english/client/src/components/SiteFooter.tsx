@@ -13,9 +13,9 @@ export default function SiteFooter() {
   return (
     <footer
       style={{
+        marginTop: "auto",
         borderTop: "1px solid #263040",
         padding: "2.5rem 0",
-        marginTop: "4rem",
       }}
     >
       <div

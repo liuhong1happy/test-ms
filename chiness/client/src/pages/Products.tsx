@@ -188,7 +188,7 @@ export default function ProductsPage() {
   }, []);
 
   return (
-    <div style={{ background: "#141B27", minHeight: "100vh" }}>
+    <div style={{ background: "#141B27", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <SiteNav />
 
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "120px 40px 100px" }}>

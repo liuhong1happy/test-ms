@@ -57,7 +57,7 @@ export default function ProductDetail() {
 
   if (!item) {
     return (
-      <div style={{ background: "#141B27", minHeight: "100vh" }}>
+      <div style={{ background: "#141B27", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
         <SiteNav />
         <div
           style={{
@@ -92,7 +92,7 @@ export default function ProductDetail() {
   const statusCfg = STATUS_CONFIG[item.status];
 
   return (
-    <div style={{ background: "#141B27", minHeight: "100vh" }}>
+    <div style={{ background: "#141B27", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <SiteNav />
 
       {/* ── Hero ──────────────────────────────────────────────── */}

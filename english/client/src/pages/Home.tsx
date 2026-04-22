@@ -38,7 +38,7 @@ export default function Home() {
   };
 
   return (
-    <div style={{ background: "#141B27", minHeight: "100vh" }}>
+    <div style={{ background: "#141B27", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <SiteNav />
 
       {/* ── Hero Section ── */}

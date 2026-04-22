@@ -1003,65 +1003,9 @@ export const research = [
     title: "ClawLoops: Evolution from OpenClaw to Team-Level AI Workspace Platform",
     label: "Research",
     date: "April 16, 2026",
-    readTime: "12 min read",
     image: CDN.card_agent,
     featured: true,
     summary:
       "Explore the architectural evolution of ClawLoops as it transforms OpenClaw from a single-user tool into a comprehensive, self-hosted team platform, bridging the gap between individual AI experimentation and enterprise-level collaboration.",
-  },
-  {
-    slug: "scaling-reasoning",
-    title: "Scaling Reasoning Through Structured Thought",
-    label: "Research",
-    date: "March 10, 2026",
-    readTime: "14 min read",
-    image: CDN.card_research,
-    featured: false,
-    summary:
-      "We investigate how explicit reasoning traces during training improve model performance on multi-step logical tasks, and show that structured thought supervision scales predictably with compute.",
-  },
-  {
-    slug: "sparse-attention",
-    title: "Sparse Attention Patterns in Long-Context Models",
-    label: "Research",
-    date: "February 18, 2026",
-    readTime: "11 min read",
-    image: CDN.card_model,
-    featured: false,
-    summary:
-      "An analysis of attention head specialization in models trained on 128K context windows, revealing emergent sparse routing patterns that enable efficient long-document reasoning.",
-  },
-  {
-    slug: "reward-modeling",
-    title: "Reward Model Calibration for Alignment",
-    label: "Research",
-    date: "January 29, 2026",
-    readTime: "9 min read",
-    image: CDN.card_infra,
-    featured: false,
-    summary:
-      "We identify systematic miscalibration in reward models trained on human preference data and propose a calibration procedure that improves alignment stability across distribution shifts.",
-  },
-  {
-    slug: "multimodal-grounding",
-    title: "Grounding Language Models in Perceptual Space",
-    label: "Research",
-    date: "December 5, 2025",
-    readTime: "12 min read",
-    image: CDN.card_agent,
-    featured: false,
-    summary:
-      "A new training paradigm for multimodal models that improves visual grounding by aligning language representations with perceptual features at multiple levels of abstraction.",
-  },
-  {
-    slug: "inference-efficiency",
-    title: "Speculative Decoding with Draft Model Ensembles",
-    label: "Research",
-    date: "November 14, 2025",
-    readTime: "8 min read",
-    image: CDN.card_research,
-    featured: false,
-    summary:
-      "We extend speculative decoding with an ensemble of small draft models, achieving 3.2× inference speedup on diverse task distributions while maintaining output quality.",
   },
 ];

@@ -135,6 +135,9 @@ export default function SiteNav() {
             <Link href="/">
               <span
                 style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  height: 34,
                   fontFamily: "'DM Mono', monospace",
                   fontSize: 16,
                   letterSpacing: "0.06em",
@@ -143,6 +146,7 @@ export default function SiteNav() {
                   cursor: "pointer",
                   transition: "color 0.15s",
                   padding: "6px 14px",
+                  lineHeight: 1,
                   borderBottom: isActive("/")
                     ? "1px solid rgba(138,180,248,0.5)"
                     : "1px solid transparent",
@@ -170,6 +174,7 @@ export default function SiteNav() {
                 onMouseLeave={scheduleClose}
                 onClick={() => { navigate('/products'); }}
                 style={{
+                  height: 34,
                   fontFamily: "'DM Mono', monospace",
                   fontSize: 16,
                   letterSpacing: "0.06em",
@@ -183,6 +188,7 @@ export default function SiteNav() {
                   padding: "6px 14px",
                   background: "none",
                   border: "none",
+                  lineHeight: 1,
                   borderBottom:
                     isActive("/products") || dropdownOpen
                       ? "1px solid rgba(138,180,248,0.5)"
@@ -450,6 +456,9 @@ export default function SiteNav() {
             <Link href="/research">
               <span
                 style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  height: 34,
                   fontFamily: "'DM Mono', monospace",
                   fontSize: 16,
                   letterSpacing: "0.06em",
@@ -458,6 +467,7 @@ export default function SiteNav() {
                   cursor: "pointer",
                   transition: "color 0.15s",
                   padding: "6px 14px",
+                  lineHeight: 1,
                   borderBottom: isActive("/research")
                     ? "1px solid rgba(138,180,248,0.5)"
                     : "1px solid transparent",

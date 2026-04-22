@@ -12,7 +12,7 @@ export default function ResearchPage() {
   const [, navigate] = useLocation();
 
   return (
-    <div style={{ background: "#0A0A0A", minHeight: "100vh" }}>
+    <div style={{ background: "#0A0A0A", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <SiteNav />
 
       <div className="site-container" style={{ paddingTop: "7rem", paddingBottom: "2rem" }}>
@@ -103,17 +103,6 @@ export default function ResearchPage() {
                   >
                     {item.date}
                   </span>
-                  {item.readTime && (
-                    <span
-                      style={{
-                        fontFamily: "'DM Mono', monospace",
-                        fontSize: "13px",
-                      color: "#777",
-                    }}
-                  >
-                      · {item.readTime}
-                    </span>
-                  )}
                 </div>
                 <h3
                   style={{

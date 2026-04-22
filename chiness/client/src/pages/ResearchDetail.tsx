@@ -25,7 +25,7 @@ export default function ResearchDetail() {
 
   if (!item) {
     return (
-      <div style={{ background: "#141B27", minHeight: "100vh" }}>
+      <div style={{ background: "#141B27", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
         <SiteNav />
         <div style={{ maxWidth: "900px", margin: "0 auto", padding: "8rem 3rem 4rem" }}>
           <p style={{ color: "#888" }}>文章未找到。</p>
@@ -41,7 +41,7 @@ export default function ResearchDetail() {
   }
 
   return (
-    <div style={{ background: "#141B27", minHeight: "100vh" }}>
+    <div style={{ background: "#141B27", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <SiteNav />
 
       {/* Hero image */}
@@ -87,9 +87,6 @@ export default function ResearchDetail() {
         <div className="fade-up" style={{ display: "flex", alignItems: "center", gap: "0.6rem", marginBottom: "1.25rem", flexWrap: "wrap" }}>
           <span className="tag">{item.label}</span>
           <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "11px", color: "#666" }}>{item.date}</span>
-          {item.readTime && (
-            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "11px", color: "#666" }}>· {item.readTime}</span>
-          )}
         </div>
 
         {/* Title */}
