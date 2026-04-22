@@ -7,14 +7,8 @@ RUN rm /etc/nginx/conf.d/default.conf
 # 复制自定义的Nginx配置文件
 COPY nginx.conf /etc/nginx/conf.d/
 
-# 复制默认的index.html
-COPY index.html /usr/share/nginx/html/
-
-# 复制中文版本的构建产物
-COPY chiness/dist/public /usr/share/nginx/html/zh
-
-# 复制英文版本的构建产物
-COPY english/dist/public /usr/share/nginx/html/en
+# 复制构建产物
+COPY dist /usr/share/nginx/html/
 
 # 暴露80端口
 EXPOSE 80

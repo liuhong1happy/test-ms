@@ -14,6 +14,10 @@ npm install --legacy-peer-deps
 npm run build
 cd ..
 
+cp chiness/dist/* dist/zh/
+cp english/dist/* dist/en/
+cp index.html dist/
+
 echo "构建Docker镜像 ${IMAGE_NAME}:${IMAGE_TAG}"
 docker build -t ${IMAGE_NAME}:${IMAGE_TAG} .
 
