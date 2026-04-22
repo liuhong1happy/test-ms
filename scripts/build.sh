@@ -14,6 +14,7 @@ npm install --legacy-peer-deps
 npm run build
 cd ..
 
+mkdir -p dist/zh dist/en
 cp chiness/dist/* dist/zh/
 cp english/dist/* dist/en/
 cp index.html dist/
