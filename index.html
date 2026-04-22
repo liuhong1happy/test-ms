@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machine Society</title>
+</head>
+<body>
+  <script>
+    const language = navigator.language;
+    console.log(language);
+    if (language.startsWith('zh')) {
+      window.location.href = '/zh/';
+    } else {
+      window.location.href = '/en/';
+    }
+  </script>
+</body>
+</html>

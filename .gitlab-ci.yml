@@ -1,0 +1,23 @@
+stages:
+  - build
+  - publish
+  - notice
+
+# 构建中文版本
+build-image:
+  stage: build
+  image: node:22-alpine
+  script:
+    - chmod +x ./scripts/build.sh
+    - ./scripts/build.sh
+  only:
+    - master
+
+publish-k8s:
+  stage: publish
+  image: bitnami/kubectl:latest
+  script:
+    - chmod +x ./scripts/publish.sh
+    - ./scripts/publish.sh
+  only:
+    - master
