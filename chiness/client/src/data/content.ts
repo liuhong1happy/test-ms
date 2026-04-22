@@ -32,17 +32,17 @@
  * ================================================================
  */
 
-export const ASSET_BASE = "/zh/";
+export const ASSET_BASE = "/zh";
 
 // ── Asset URLs ───────────────────────────────────────────────
-export const LOGO_URL = ASSET_BASE + "images/ms-logo.png";
+export const LOGO_URL = ASSET_BASE + "/images/ms-logo.png";
 
 const CDN = {
-  hero_product:  ASSET_BASE + "images/hero_product.webp",
-  card_agent:    ASSET_BASE + "images/card_agent.webp",
-  card_infra:    ASSET_BASE + "images/card_infra.webp",
-  card_model:    ASSET_BASE + "images/card_model.webp",
-  card_research: ASSET_BASE + "images/card_research.webp",
+  hero_product:  ASSET_BASE + "/images/hero_product.webp",
+  card_agent:    ASSET_BASE + "/images/card_agent.webp",
+  card_infra:    ASSET_BASE + "/images/card_infra.webp",
+  card_model:    ASSET_BASE + "/images/card_model.webp",
+  card_research: ASSET_BASE + "/images/card_research.webp",
 };
 
 export const siteInfo = {
