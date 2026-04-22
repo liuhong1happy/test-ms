@@ -15,6 +15,6 @@ npm run build
 cd ..
 
 mkdir -p dist/zh dist/en
-cp chiness/dist/public/* dist/zh/
-cp english/dist/public/* dist/en/
+cp -r  chiness/dist/public/* dist/zh/
+cp -r  english/dist/public/* dist/en/
 cp index.html dist/
