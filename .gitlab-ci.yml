@@ -15,9 +15,16 @@ build-image:
 
 publish-k8s:
   stage: publish
-  image: bitnami/kubectl:latest
   script:
     - chmod +x ./scripts/publish.sh
     - ./scripts/publish.sh
+  only:
+    - master
+
+notice:
+  stage: notice
+  script:
+    - chmod +x ./scripts/notice.sh
+    - ./scripts/notice.sh
   only:
     - master
