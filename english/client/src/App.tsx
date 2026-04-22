@@ -31,7 +31,6 @@ function AppRouter() {
         <Route path="/research" component={Research} />
         <Route path="/research/:slug" component={ResearchDetail} />
         <Route path="/404" component={NotFound} />
-        <Route component={NotFound} />
       </Router>
     </>
   );
